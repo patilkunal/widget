@@ -1,0 +1,21 @@
+
+
+    <?xml version="1.0" encoding="utf-8" ?>  
+    <gadget>  
+       <name>DigitalClock</name>  
+       <namespace>Example Clock</namespace>  
+       <version>1.0.0.0</version>  
+       <author name="Kunal">  
+          <info url="www.inovisionsoftware.com" />  
+       </author>  
+       <copyright>Kunal</copyright>  
+       <description>Digital Clock</description>  
+       <hosts>  
+          <host name="sidebar">  
+             <base type="HTML" apiVersion="1.0.0" src="clock.html" />  
+             <platform minPlatformVersion="1.0" />  
+             <permissions>Full</permissions>  
+          </host>  
+       </hosts>  
+    </gadget> 
+

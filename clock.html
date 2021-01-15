@@ -1,0 +1,44 @@
+
+
+    <html>  
+       <head>  
+          <title>Digital Clock</title>  
+          <style>  
+             body  
+             {  
+             margin: 0;  
+             width: 130px;  
+             height: 65px;  
+             }  
+             #gadgetContent  
+             {  
+             width: 130px;  
+             top: 24px;  
+             text-align: center;  
+             position: absolute;  
+             font-family: Verdana;  
+             font-size: 10pt;  
+             }  
+          </style>  
+          <script language="javascript">  
+             function showtime()  
+             {  
+                 var now=new Date();       // Find current date  
+                 var h=now.getHours();  // Find current hour  
+                 var m=now.getMinutes();    // Find current minute  
+                 var s=now.getSeconds();    // Find current second  
+                 h=(h<10)?"0"+h:h;       // Convert hour to 2 digits  
+                 m=(m<10)?"0"+m:m;       // Convert minute to 2 digits  
+                 s=(s<10)?"0"+s:s;       // Convert second to 2 digits  
+                 gadgetContent.innerHTML="<h2><font color='red'>"+h+":</font>  
+             <font color='lime'>"+m+":</font><font color='cyan'>"+s+"</font></h2>";  
+                         // Set time on the span element  
+                 setTimeout("showtime()",1000); // Display time after every one second  
+             }  
+          </script>  
+       </head>  
+       <body onload="showtime()" bgcolor="black">  
+          <span id="gadgetContent"></span>  
+       </body>  
+    </html> 
+
